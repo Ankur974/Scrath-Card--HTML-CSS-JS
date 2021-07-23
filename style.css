@@ -1,0 +1,112 @@
+#canvas_wrapper {
+  display: block;
+  margin: auto;
+  padding: 30px 0;
+  width: 912px;
+}
+#canvas_wrapper .panel {
+  border: 1px solid #fff;
+  background-color: #fff;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  float: left;
+  display: block;
+}
+#canvas_wrapper .panel h1 {
+  margin-top: 8px;
+  font-size: 36px;
+  text-align: center;
+  line-height: 140px;
+}
+#canvas_wrapper .panel .canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#canvas_wrapper .clearfix {
+  content: " ";
+  display: block;
+  clear: both;
+}
+#left_attempts {
+  font-size: 32px;
+  color: #000;
+}
+/* Some CSS to prettyfy the screen */
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  overflow-y: auto;
+  background: linear-gradient(90deg, rgba(223, 247, 255, 1) 0%, rgba(137, 235, 255, 1) 100%);
+  background-repeat: no-repeat;
+}
+body:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.8;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="0 0 28 49"%3E%3Cg fill-rule="evenodd"%3E%3Cg id="hexagons" fill="%239C92AC" fill-opacity="0.4" fill-rule="nonzero"%3E%3Cpath d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+body a {
+  color: #0078cc;
+  text-decoration: none;
+}
+body #main-wrapper {
+  padding: 40px 0;
+}
+body .contrast-bg {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, .6);
+}
+body .contrast-bg:first-child {
+  margin-bottom: 60px;
+}
+body .contrast-bg:last-child {
+  margin-top: 60px;
+  margin-left: 131px;
+}
+body .contrast-bg p {
+  margin-top: 0;
+}
+body .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+body .container .left {
+  text-align: left;
+  width: 25%;
+  margin: 0 15px;
+}
+body .container .right {
+  text-align: left;
+  width: 75%;
+  margin: 0 15px;
+}
+@media (max-width: 767px) {
+  body .container {
+    display: block;
+ }
+  body .container .left, body .container .right {
+    margin: 15px;
+    width: calc(100% - 60px);
+ }
+}
